@@ -255,15 +255,22 @@ select {
 }
 
 .underline-indicator{
+  cursor: pointer;
   padding: var(--underline-gap, 1rem) 0;
+  border: 0;
   border-bottom: .2rem solid rgba(var(--clr-white), 0);
 }
 
 .underline-indicator:hover,
-.underline-indicators:focus {
+.underline-indicator:focus {
     border-color: rgba(var(--clr-white), .5);
 }
 
- .active{
-    border-color: rgba(var(--clr-white) / 1);
+ .underline-indicator > [aria-selected="true"]{
+    border-color: rgb(var(--clr-white));
+    color: rgb(var(--clr-white));
+}
+
+.tab-list {
+  --gap: 2.5rem;
 }
