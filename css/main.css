@@ -267,10 +267,28 @@ select {
 }
 
  .underline-indicator > [aria-selected="true"]{
-    border-color: rgb(var(--clr-white));
-    color: rgb(var(--clr-white));
+    border-color: rgba(var(--clr-white), 1);
+    color: rgba(var(--clr-white), 1);
 }
 
 .tab-list {
   --gap: 2.5rem;
+}
+
+.dot-indicator {
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  padding: .5em;
+  background-color: rgba(var(--clr-white), .25);
+}
+
+.dot-indicator:hover,
+.dot-indicator:focus {
+  background-color: rgba(var(--clr-white), .5);
+}
+
+.dot-indicator > [aria-selected="true"]{
+   background-color: rgba(var(--clr-white), 1);
 }
