@@ -292,3 +292,29 @@ select {
 .dot-indicator > [aria-selected="true"]{
    background-color: rgba(var(--clr-white), 1);
 }
+
+.stacked-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.number-indicator {
+  cursor: pointer;
+  padding: 0 1.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid rgba(var(--clr-white), .25);
+}
+
+.number-indicator:hover,
+.number-indicator:focus {
+  border-color: rgba(var(--clr-white), 1);
+}
+
+.number-indicator > [aria-selected="true"]{
+  background-color: rgba(var(--clr-white), 1);
+  color: rgba(var(--clr-dark));
+}
